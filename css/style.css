@@ -79,12 +79,10 @@ header {
 
 .header_logo a {
     display: flex;
-    justify-content: center;
 }
 
 .header_logo a img {
     max-width: 10%;
-    fill: bisque;
 }
 
 
@@ -626,12 +624,9 @@ footer {
     background: rgba(19, 19, 24, 0.05);
 }
 
-.footer_logo a svg {
-    color: ghostwhite;
+.footer_logo a{
+    justify-content: center;
 }
-
-.footer_logo {}
-
 .footer_wrapper p {
 
     width: 72%;
@@ -664,6 +659,7 @@ footer {
 
     margin: 30px 0 40px;
 }
+
 
 /* footer styles */
 
@@ -829,6 +825,9 @@ footer {
     }
     .social_icon i{
         font-size: 40px;
+    }
+    .footer_logo a{
+        justify-content: center;
     }
 }
 
