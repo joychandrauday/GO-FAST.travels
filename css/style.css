@@ -3,11 +3,14 @@
     margin: 0;
     padding: 0;
 }
-.dnone{
+
+.dnone {
     display: none;
 }
+
 body {
     font-family: "Mulish", sans-serif;
+    margin: 0 auto;
 }
 
 a {
@@ -32,9 +35,11 @@ a {
     cursor: pointer;
     transition: all .3s;
 }
-.btn_primary:hover{
+
+.btn_primary:hover {
     background-color: #ff1e00f1;
 }
+
 .desc_p {
     color: rgba(19, 19, 24, 0.70);
     font-size: 14px;
@@ -405,17 +410,17 @@ nav>ul {
 
 .deals_wrapper {
 
-    width: 50%;
+width: 50%;
 
-    border-radius: 16px;
+border-radius: 16px;
 
-    border: 2px solid #FFF;
+border: 2px solid #FFF;
 
-    background: rgba(255, 255, 255, 0.80);
+background: rgba(255, 255, 255, 0.80);
 
-    backdrop-filter: blur(2.5px);
+/* backdrop-filter: blur(2.5px); */
 
-    padding: 35px;
+padding: 35px;
 }
 
 .deals {
@@ -620,37 +625,46 @@ footer {
     align-items: center;
     background: rgba(19, 19, 24, 0.05);
 }
-.footer_logo a svg{
+
+.footer_logo a svg {
     color: ghostwhite;
 }
+
 .footer_logo {}
-.footer_wrapper p{
 
-width: 72%;
+.footer_wrapper p {
 
-margin: 0 auto 20px;
+    width: 72%;
 
-line-height: 25px;
+    margin: 0 auto 20px;
 
-color: firebrick;
+    line-height: 25px;
+
+    color: firebrick;
 }
-.social_icon{
+
+.social_icon {
     padding: 15px 0 15px;
 }
-.social_icon a{
+
+.social_icon a {
     padding: 6px;
 }
-.social_icon i{
+
+.social_icon i {
     color: black;
     font-size: 24px;
 }
-.social_icon a:hover i{
+
+.social_icon a:hover i {
     color: #FF5400;
 }
-.line{
-    
-margin: 30px 0 40px;
+
+.line {
+
+    margin: 30px 0 40px;
 }
+
 /* footer styles */
 
 /* ==============main styles============== */
@@ -664,55 +678,158 @@ margin: 30px 0 40px;
         width: 90%;
         margin: 0 auto;
     }
-    header{
+
+    .heading_h1 {
+        font-size: 1.8rem;
+    }
+
+    header {
         display: flex;
     }
-    .header_logo a img{
+
+    .header_logo a img {
         max-width: 30%;
         line-height: 0;
     }
-    nav>ul{
+
+    nav>ul {
         display: block;
-    
+
     }
-    .home_banner_elements{
+
+    .home_banner_elements {
         margin: 0;
         padding: 50px 5px 25px;
         height: auto;
     }
-    .home_banner_elements_text h1{
+
+    .home_banner_elements_text h1 {
         font-size: 1.7rem;
     }
-    .home_banner_elements_text p{
+
+    .home_banner_elements_text p {
         width: 100%;
         margin: 20px 0;
     }
-    .banner_form{
+
+    .banner_form {
         width: 90%;
     }
-    .banner_form input,.banner_form select,.banner_form button{
+
+    .banner_form input, .banner_form select, .banner_form button {
         margin: 7px 0;
         width: 90%;
         font-size: 20px;
         padding: 25px 20px;
     }
-    .banner_form input[type="text"]{
+
+    .banner_form input[type="text"] {
         width: 77%;
     }
-    .popular_section_wrapper{
+
+    .popular_section_wrapper {
         flex-direction: column;
     }
-    .popular_section_text h1{
+
+    .popular_section_text h1 {
         font-size: 1.8rem;
     }
-    .popular_section_text button{
+
+    .popular_section_text button {
         margin: 0px 0 30px;
     }
-    .popular_section_img img{
+
+    .popular_section_img img {
         max-width: 100%;
-        
+
     }
 
+    .destination_section_wrapper h1 {
+        font-size: 1.6rem;
+    }
+
+    .destination_section_wrapper p {
+        width: 100%;
+        font-size: 1.2rem;
+        line-height: 26px;
+    }
+
+    .des_row {
+        flex-direction: column;
+    }
+
+    .destination img {
+        width: 100%;
+    }
+
+    .destination_container {
+        padding: 0;
+    }
+
+    .place_name {
+        top: 25%;
+        left: 30%;
+    }
+
+    .choose_row {
+        flex-direction: column;
+
+    }
+
+    .choose_card {
+        width: 100%;
+        padding: 0;
+        margin: 0 0 20px 0;
+    }
+    .choose_card_cont{
+        padding: 30px 15px;
+        text-align: left;
+    }
+    .deals{
+        display: flex;
+        padding: 0;
+        height: 500px;
+        align-items: flex-end;
+    }
+    .deals_wrapper{
+        width: 65%;
+        margin: 0 auto 20px;
+    }
+    .deals_wrapper p{
+        display:none;
+    }
+    .video_showcase_wrapper{
+        flex-direction: column;
+    }
+    .video_showcase_vid iframe{
+        width: 100%;
+        height:auto;
+    }
+    .video_showcase_vid{
+        height: auto;
+    }
+    .newsletter_section_wrapper{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .newsletter_form_wrap {
+        padding: 35px 35px;
+    }
+    .newsletter_tick{
+    }
+    .newsletter_tick h1{
+        font-size: 1rem;
+    }
+    .newsletter_tick span{
+        font-size: .8rem !important;
+    }
+    .footer_wrapper p{
+        width: 90%;
+        font-size: 20px;
+    }
+    .social_icon i{
+        font-size: 40px;
+    }
 }
 
 /* medium device */
