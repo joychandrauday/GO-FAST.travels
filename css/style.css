@@ -150,6 +150,10 @@ nav>ul {
     font-weight: 400;
     margin: 0 8px;
 }
+
+.form_focus:focus-visible{
+    outline-color: #fdfdfd00;
+}
 .banner_form select{}
 .banner_form button i{
     margin-right:10px;
