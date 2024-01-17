@@ -37,7 +37,7 @@ a {
 }
 
 .btn_primary:hover {
-    background-color: #ff1e00f1;
+    background-color: #db0000;
 }
 
 .desc_p {
@@ -52,6 +52,7 @@ a {
     text-align: center;
     font-size: 2.3rem;
     font-weight: 800;
+    text-transform: capitalize;
 }
 
 /* ==============shared styles============== */
@@ -99,18 +100,23 @@ header {
     text-align: right;
     line-height: 20px;
 }
+
 #icon {
     cursor: pointer;
 }
+
 #icon svg {
     width: 30px;
 }
-#icon svg path{
+
+#icon svg path {
     color: #ff5400 !important;
 }
-#checkbox, #icon{
+
+#checkbox, #icon {
     display: none;
 }
+
 nav {
     display: flex;
 }
@@ -429,7 +435,7 @@ border: 2px solid #FFF;
 
 background: rgba(255, 255, 255, 0.80);
 
-/* backdrop-filter: blur(2.5px); */
+backdrop-filter: blur(2.5px);
 
 padding: 35px;
 }
@@ -494,6 +500,68 @@ padding: 35px;
 }
 
 /* deals styles */
+
+/* bonus section styles */
+
+.review_section{
+    padding: 50px 0;
+}
+.review_section_wrapper{}
+.review_section_wrapper h1{
+}
+.review_section_wrapper p{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 30px;
+}
+.review_card_container{
+
+display: flex;
+
+gap: 20px;
+}
+.review_card{}
+.review_card{border-radius: 16px;border: 2px solid #FFF;background: #ff5400;backdrop-filter: blur(11.5px);padding: 15px 35px 15px 35px;}
+.review_top{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.review_top i{
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 24px;
+}
+.review_top h4{
+    text-transform: capitalize;
+    color: white;
+    font-size: 20px;
+}
+.rating{}
+.rating i{
+    font-size: 14px;
+    background: none;
+    padding: 0;
+    color: black;
+}
+.checked{
+    color: white !important;
+}
+
+.review_text{}
+.review_text p{
+    color: wheat;
+    text-align: left;
+    width: 100%;
+}
+.review_date{}
+.review_date h4{
+    text-transform: capitalize;
+    color: wheat;
+}
+/* bonus section styles */
 /* video_showcase styles */
 .video_showcase {
     padding: 100px 0;
@@ -637,9 +705,10 @@ footer {
     background: rgba(19, 19, 24, 0.05);
 }
 
-.footer_logo a{
+.footer_logo a {
     justify-content: center;
 }
+
 .footer_wrapper p {
 
     width: 72%;
@@ -701,8 +770,9 @@ footer {
         max-width: 30%;
         line-height: 0;
     }
-    nav{
-    }
+
+    nav {}
+
     nav>ul {
         display: block;
         position: absolute;
@@ -715,28 +785,35 @@ footer {
         margin: 60px 0 0 0;
         display: none;
     }
-    nav>ul>li{
+
+    nav>ul>li {
         padding: 20px 0;
         color: white;
         margin: 5px;
     }
-    nav>ul>li a{
+
+    nav>ul>li a {
         color: rgb(255, 255, 255);
         font-size: 18px;
     }
-    nav>ul>li a:hover{
+
+    nav>ul>li a:hover {
         color: #000;
     }
-    #icon{
+
+    #icon {
         display: block;
     }
-    #icon svg{
+
+    #icon svg {
         width: 50px;
         display: block;
     }
+
     #checkbox:checked~ul {
         display: block;
     }
+
     .home_banner_elements {
         margin: 0;
         padding: 50px 5px 25px;
@@ -821,56 +898,72 @@ footer {
         padding: 0;
         margin: 0 0 20px 0;
     }
-    .choose_card_cont{
+
+    .choose_card_cont {
         padding: 30px 15px;
         text-align: left;
     }
-    .deals{
+
+    .deals {
         display: flex;
         padding: 0;
         height: 500px;
         align-items: flex-end;
     }
-    .deals_wrapper{
+
+    .deals_wrapper {
         width: 65%;
         margin: 0 auto 20px;
     }
-    .deals_wrapper p{
-        display:none;
+
+    .deals_wrapper p {
+        display: none;
     }
-    .video_showcase_wrapper{
+
+    .video_showcase_wrapper {
         flex-direction: column;
     }
-    .video_showcase_vid iframe{
+
+    .video_showcase_vid iframe {
         width: 100%;
-        height:auto;
-    }
-    .video_showcase_vid{
         height: auto;
     }
-    .newsletter_section_wrapper{
+    .review_card_container{
+        flex-direction: column;
+    }
+    .video_showcase_vid {
+        height: auto;
+    }
+
+    .newsletter_section_wrapper {
         flex-direction: column;
         gap: 20px;
     }
+
     .newsletter_form_wrap {
         padding: 35px 35px;
     }
-    .newsletter_tick{
-    }
-    .newsletter_tick h1{
+
+    .newsletter_tick {}
+
+    .newsletter_tick h1 {
         font-size: 1rem;
     }
-    .newsletter_tick span{
+
+    .newsletter_tick span {
         font-size: .8rem !important;
     }
-    .footer_wrapper p{
+
+    .footer_wrapper p {
         width: 90%;
         font-size: 20px;
     }
-    .social_icon i{
+
+    .social_icon i {
         font-size: 40px;
     }
-    .footer_logo a{
+
+    .footer_logo a {
         justify-content: center;
     }
 }
