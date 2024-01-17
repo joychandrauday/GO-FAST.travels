@@ -99,8 +99,21 @@ header {
     text-align: right;
     line-height: 20px;
 }
-
-nav {}
+#icon {
+    cursor: pointer;
+}
+#icon svg {
+    width: 30px;
+}
+#icon svg path{
+    color: #ff5400 !important;
+}
+#checkbox, #icon{
+    display: none;
+}
+nav {
+    display: flex;
+}
 
 nav>ul {}
 
@@ -681,18 +694,49 @@ footer {
 
     header {
         display: flex;
+        justify-content: space-between;
     }
 
     .header_logo a img {
         max-width: 30%;
         line-height: 0;
     }
-
+    nav{
+    }
     nav>ul {
         display: block;
-
+        position: absolute;
+        background: #ff5400;
+        left: 0px;
+        width: 100%;
+        text-align: center;
+        border-radius: 0 0 10px 10px;
+        padding: 0;
+        margin: 60px 0 0 0;
+        display: none;
     }
-
+    nav>ul>li{
+        padding: 20px 0;
+        color: white;
+        margin: 5px;
+    }
+    nav>ul>li a{
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+    }
+    nav>ul>li a:hover{
+        color: #000;
+    }
+    #icon{
+        display: block;
+    }
+    #icon svg{
+        width: 50px;
+        display: block;
+    }
+    #checkbox:checked~ul {
+        display: block;
+    }
     .home_banner_elements {
         margin: 0;
         padding: 50px 5px 25px;
