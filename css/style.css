@@ -641,7 +641,10 @@ gap: 20px;
 .newsletter {
     display: block;
 }
-
+.newsletter input:focus-visible{
+    border: none !important;
+    outline: none;
+}
 .newsletter input {
     border: none;
     display: block;
